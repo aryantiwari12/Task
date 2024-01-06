@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.container{
+  display: flex;
+  gap: 20px;
+  padding: 40px;
+}
+.div1, .div2{
+  /* height: 400px; */
+  /* width: 50%; */
+  border: 1px solid #e5e5e5;
+}
+.form-control{
+  padding: 6px 12px;
+  outline: none;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  margin-block: 10px;
+}
+
+.image-gallery{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.image-outer{
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  width: 24%;
+}
+.image{
+  height: 120px;
+  margin-bottom: 10px;
+}
+img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.btn{
+  background: rgb(0, 191, 255);
+  color: white;
+  /* padding: 6px 12px; */
+  border-radius: 4px;
+  border: 1px solid rgb(0, 191, 255);
+  cursor: pointer;
+}
+@media (max-width:575px) {
+  .container{
+  flex-wrap: wrap;
+  }
+  .div1, .div2{
+    width: 100%;
+    height: 300px;
+  }
+}
+.shapes{
+  height: 300px;
+  width: 300px;
+  overflow: hidden;
+}
+.circle{
+  border-radius: 50%;
+}
+.square{
+  width: 500px !important;
+}
